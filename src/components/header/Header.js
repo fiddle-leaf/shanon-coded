@@ -1,9 +1,11 @@
+import About from "./about/About";
+
 export default function Header (props) {
-    const pageTitle = {title: "Welcome to my Page."}
 
     return ( 
         <header>
-        hi
+        <h1>shanon-coded</h1>
+        <About />
         </header>
      );
 }
