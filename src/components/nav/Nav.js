@@ -1,23 +1,25 @@
+import Grid from "../entries/grid/Grid";
+
 export default function Nav(props) {
   return (
     <nav>
-      <ul>
-        <li>
+      <Grid isWrapped={true}>
+        <span>
           <a>Home</a>
-        </li>
-        <li>
+        </span>
+        <span>
           <a>About</a>
-        </li>
-        <li>
+        </span>
+        <span>
           <a>Instagram</a>
-        </li>
-        <li>
+        </span>
+        <span>
           <a>Linkedin</a>
-        </li>
-        <li>
+        </span>
+        <span>
           <a>Github</a>
-        </li>
-      </ul>
+        </span>
+      </Grid>
     </nav>
   );
 }

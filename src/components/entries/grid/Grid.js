@@ -10,7 +10,7 @@ import grid from "./Grid.module.sass";
 export default function Grid({ children, isRows, isWrapped = false }) {
   return (
     <>
-      {isRows ? (
+      {isRows === true ? (
         <grid-item class={isWrapped ? [grid.row, grid.wrap] : grid.row}>
           {children}
         </grid-item>
