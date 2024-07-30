@@ -1,22 +1,23 @@
-export default function Nav (props) {
-return (<nav>
-    <ul>
+export default function Nav(props) {
+  return (
+    <nav>
+      <ul>
         <li>
-            <a>Home</a>
+          <a>Home</a>
         </li>
         <li>
-            <a>About</a>
+          <a>About</a>
         </li>
         <li>
-            <a>Instagram</a>
+          <a>Instagram</a>
         </li>
         <li>
-            <a>Linkedin</a>
+          <a>Linkedin</a>
         </li>
         <li>
-            <a>Github</a>
+          <a>Github</a>
         </li>
-        
-    </ul>
-</nav>)
+      </ul>
+    </nav>
+  );
 }
