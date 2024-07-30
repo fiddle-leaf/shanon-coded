@@ -1,8 +1,9 @@
 import Info from "../info/Info";
+import Grid from "../grid/Grid";
 
 export default function Photo({ title, date, source, alt, caption = "" }) {
   return (
-    <article>
+    <Grid isRows={true}>
       <div>
         <figure>
           <img src={source} alt={alt} />
@@ -12,6 +13,6 @@ export default function Photo({ title, date, source, alt, caption = "" }) {
       <div>
         <Info title={title} date={date} />
       </div>
-    </article>
+    </Grid>
   );
 }

@@ -1,0 +1,16 @@
+=grid($flow: row nowrap, $gap: 0)
+    display: flex
+    flex-direction: $flow
+    gap: $gap
+
+.row
+    +grid($gap: 1rem)
+
+
+.column
+    +grid($flow: column nowrap, $gap: 1rem)
+
+.wrap
+    flex-wrap: wrap
+
+
