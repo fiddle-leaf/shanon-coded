@@ -1,23 +1,20 @@
-=grid($flow: row, $gap: 0)
+=grid($flow: row)
     display: flex
     flex-direction: $flow
-    gap: $gap
-
 #row
-    +grid($gap: 1rem)
+    +grid
 
 
 #column
-    +grid($flow: column, $gap: 1rem)
+    +grid($flow: column)
 
 .wrap
     flex-wrap: wrap
+    gap: 1rem
 
 .nowrap
     flex-wrap: nowrap
+    gap: 1rem
 
 
-grid-item
-    span //nav links
-        flex: 0
 

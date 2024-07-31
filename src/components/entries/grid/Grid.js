@@ -12,9 +12,8 @@ export default function Grid({ children, isRows, isWrapped = false }) {
     <>
       {isRows === true ? (
         <grid-item
-          class={
-            isWrapped === true ? grid.row && grid.wrap : grid.row && grid.nowrap
-          }
+          id={grid.row}
+          class={isWrapped === true ? grid.wrap : grid.nowrap}
         >
           {children}
         </grid-item>
