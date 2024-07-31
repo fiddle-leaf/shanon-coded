@@ -1,3 +1,4 @@
+import styles from "./Nav.module.sass";
 import Grid from "../entries/grid/Grid";
 
 export default function Nav(props) {

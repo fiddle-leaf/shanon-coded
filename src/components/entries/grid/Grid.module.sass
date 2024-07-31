@@ -3,18 +3,21 @@
     flex-direction: $flow
     gap: $gap
 
-.row
+#row
     +grid($gap: 1rem)
 
 
-.column
+#column
     +grid($flow: column, $gap: 1rem)
 
 .wrap
     flex-wrap: wrap
 
+.nowrap
+    flex-wrap: nowrap
+
 
 grid-item
     span //nav links
-        flex: 1
+        flex: 0
 

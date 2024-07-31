@@ -11,11 +11,15 @@ export default function Grid({ children, isRows, isWrapped = false }) {
   return (
     <>
       {isRows === true ? (
-        <grid-item class={isWrapped ? [grid.row, grid.wrap] : grid.row}>
+        <grid-item
+          class={
+            isWrapped === true ? grid.row && grid.wrap : grid.row && grid.nowrap
+          }
+        >
           {children}
         </grid-item>
       ) : (
-        <grid-item class={isWrapped ? [grid.column, grid.wrap] : grid.column}>
+        <grid-item id={grid.column} class={isWrapped ? grid.wrap : grid.nowrap}>
           {children}
         </grid-item>
       )}
