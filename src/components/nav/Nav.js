@@ -3,7 +3,7 @@ import Grid from "../entries/grid/Grid";
 
 export default function Nav(props) {
   return (
-    <nav>
+    <nav className={styles.links}>
       <Grid isWrapped={true}>
         <span>
           <a>Home</a>
