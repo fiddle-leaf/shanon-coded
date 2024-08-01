@@ -9,6 +9,7 @@
     box-sizing: border-box
     
 .app
+    +grid($flow: column, $wrap: wrap, $gap: 1rem)
     line-height: 150%
     font: 
         family: $font
@@ -21,4 +22,5 @@ img
 
 
 .content
+    flex: 1
     padding: $space
