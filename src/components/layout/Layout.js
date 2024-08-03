@@ -6,7 +6,7 @@ import layout from "./Layout.module.sass";
 export default function Layout({ children }) {
   return (
     <article className={layout.app}>
-      <Header />
+      <Header title={layout.title} />
       <Nav />
       <main className={layout.content}>{children}</main>
       <Footer />

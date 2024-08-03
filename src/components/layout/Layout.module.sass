@@ -29,11 +29,14 @@ img
     flex: 1
     padding: $space
 
-h1
-    line-height: 150%
-    font:
-        size: 2rem
-        weight: 900
+.title
+    +grid($flow: row, $wrap: nowrap, $gap: 0)
+    padding: calc($space * 2)
+    h1
+        line-height: 150%
+        font:
+            size: 2.5rem
+            weight: 900
 
 h2
     line-height: 110%

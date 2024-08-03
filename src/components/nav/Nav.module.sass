@@ -1,16 +1,18 @@
 @use '../../styles/styles' as *
 
 .links
-    grid-item
-        height: 1.5rem 
-        align-items: center
-        align-content: center
+    +grid($flow: row, $wrap: wrap, $gap: $space)
+    align-content: space-around
+    justify-content: center
+    
+    height: 1.5rem 
+
          
         
     span
-        
+        padding-inline: $space
         background-color: hsl(333, 80%, 80%)
-        flex: 0
+        flex: 0 1 auto
 
         a
             padding: 0.5rem
