@@ -1,3 +1,4 @@
+import styles from "./Home.module.sass";
 import Photo from "../../entries/photo/Photo";
 import Text from "../../entries/text/Text";
 import Layout from "../../layout/Layout";
@@ -5,7 +6,7 @@ import Layout from "../../layout/Layout";
 export default function Home(props) {
   return (
     <Layout>
-      <article>
+      <article className={styles.entries}>
         <Photo
           title="Photo"
           date="07-18-1997"
