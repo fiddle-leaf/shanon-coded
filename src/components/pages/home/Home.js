@@ -8,7 +8,7 @@ export default function Home(props) {
     <Layout>
       <article className={styles.entries}>
         <Photo
-          title="Photo"
+          title="Sunset Butterfly"
           date="07-18-1997"
           caption="Fusce et molestie nibh. Aenean at eros ultrices, dignissim tellus hendrerit, tristique nulla."
           source="https://images.unsplash.com/photo-1540777904071-116f612b3bb9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

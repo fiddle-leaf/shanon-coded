@@ -1,21 +1,45 @@
 @use '../../../styles/styles' as *
-    
+
+
 .photo
+
     padding: $space
-    +grid($flow: row, $wrap: nowrap, $gap: $space)
+    +grid($flow: row, $wrap: wrap, $gap: $space)
     
 
 
 .image
-    flex: 2
-    background: red
+    flex: 70%
+    +grid($flow: column, $wrap: nowrap, $gap: 0)
+    justify-content: center
+    
+    
 
     img
+        flex: 100% auto
         object-fit: fill
-
+        transition-delay: 1s
     
 
 .info
-    flex: 1
-    padding: 0.5rem
+    +grid($flow: column, $wrap: nowrap, $gap: 0)
+    flex: 25%
+
+    div
+        flex: 1
+        +grid($flow: row, $wrap: wrap, $gap: 0)
+        align-items: center
+        justify-content: center
+
+        *
+            flex: 100%
+
+.details
+    align-content: flex-end
+  
+
+.caption
+
+    padding: $space
+
 

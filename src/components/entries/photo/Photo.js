@@ -1,5 +1,6 @@
 import styles from "./Photo.module.sass";
-import Info from "../info/Info";
+
+import PostDate from "../date/Date";
 
 export default function Photo({ title, date, source, alt, caption = "" }) {
   return (
@@ -8,7 +9,10 @@ export default function Photo({ title, date, source, alt, caption = "" }) {
         <img src={source} alt={alt} />
       </div>
       <div className={styles.info}>
-        <Info title={title} date={date} />
+        <div className={styles.details}>
+          <h2>{title}</h2>
+          <PostDate date={date} />
+        </div>
         <div className={styles.caption}>
           <figcaption>{caption}</figcaption>
         </div>

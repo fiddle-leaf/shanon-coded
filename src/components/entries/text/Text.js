@@ -1,5 +1,6 @@
 import styles from "./Text.module.sass";
-import Info from "../info/Info";
+
+import PostDate from "../date/Date";
 
 export default function Text({ title, date, body }) {
   return (
@@ -8,7 +9,9 @@ export default function Text({ title, date, body }) {
         <h2>{title}</h2>
         <p>{body}</p>
       </div>
-      <Info date={date} />
+      <div>
+        <PostDate date={date} />
+      </div>
     </article>
   );
 }
