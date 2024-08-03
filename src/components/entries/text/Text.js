@@ -4,12 +4,12 @@ import PostDate from "../date/Date";
 
 export default function Text({ title, date, body }) {
   return (
-    <article>
-      <div className={styles.text}>
+    <article className={styles.text}>
+      <div className={styles.body}>
         <h2>{title}</h2>
         <p>{body}</p>
       </div>
-      <div>
+      <div className={styles.date}>
         <PostDate date={date} />
       </div>
     </article>
