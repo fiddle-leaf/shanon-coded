@@ -9,7 +9,7 @@
 
 
 .image
-    flex: 70%
+    flex: 75%
     +grid($flow: column, $wrap: nowrap, $gap: 0)
     justify-content: center
     
@@ -18,12 +18,12 @@
     img
         flex: 100% auto
         object-fit: fill
-        transition-delay: 1s
+        transition-delay: 0.5s
     
 
 .info
     +grid($flow: column, $wrap: nowrap, $gap: 0)
-    flex: 25%
+    flex: 20%
 
     div
         flex: 1
@@ -36,10 +36,12 @@
 
 .details
     align-content: flex-end
+
+    h2
+        padding-block: $space
   
 
 .caption
-
     padding: $space
 
 
