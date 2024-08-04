@@ -13,6 +13,7 @@
 .app
     +grid($flow: column, $wrap: wrap, $gap: 1rem)
     background: $bg
+    align-items: center
     line-height: 150%
     color: $main
     font: 
@@ -25,15 +26,22 @@ img
     height: auto
 
 
-.content
-    max-width: 90vw
-    margin: 0 auto
+.posts,
+.header,
+.footer
+    width: 90vw
+
+.header
+    flex: 1
+    +grid($flow: column, $wrap: nowrap, $gap: $space)
+
+.posts
     flex: 1
     padding: $space
 
 .title
     +grid($flow: row, $wrap: nowrap, $gap: 0)
-    padding: calc($space * 2)
+    padding-block: calc($space * 2)
     h1
         line-height: 150%
         font:
@@ -49,10 +57,9 @@ h2
 h3
     font-size: 1.5rem
 
-header
-    .about
-        background: red
 
-footer
-    text-align: center
-    padding: calc($space/2) $space
+
+.footer 
+    footer
+        text-align: center
+        padding: calc($space/2) $space

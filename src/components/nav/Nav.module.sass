@@ -3,13 +3,18 @@
 nav
     +grid($flow: column, $wrap: nowrap, $gap: calc($space/2))
 h3.title
-    font-size: 1.3rem
+    color: $secondary
+    font:
+        weight: 900
+        size: 0.9rem
     align-self: flex-start
+    text-transform: uppercase
+    letter-spacing: calc($space/15)
 
 ul.links
     +grid($flow: row, $wrap: wrap, $gap: $space)
     align-content: space-around
-    justify-content: center
+    justify-content: flex-start
     list-style: none
     
     height: 1.5rem 
