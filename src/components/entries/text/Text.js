@@ -1,6 +1,6 @@
 import styles from "./Text.module.sass";
 
-import PostDate from "../date/Date";
+import PostDate from "../date/PostDate";
 
 export default function Text({ title, date, body }) {
   return (

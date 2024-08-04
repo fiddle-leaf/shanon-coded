@@ -1,8 +1,13 @@
+import styles from "./About.module.sass";
+
 export default function About(props) {
   return (
-    <div>
+    <div className={styles.about}>
       <div>image here</div>
-      <p>Shanon, 27 - Rockville, MD. Welcome to my ~photo~ blog.</p>
+      <div>
+        <p>Hi! I'm Shanon. </p>
+        <p>Welcome to my space! ;)</p>
+      </div>
     </div>
   );
 }

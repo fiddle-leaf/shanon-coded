@@ -12,7 +12,9 @@
     
 .app
     +grid($flow: column, $wrap: wrap, $gap: 1rem)
+    background: $bg
     line-height: 150%
+    color: $main
     font: 
         family: $font
         size: $size
@@ -44,5 +46,13 @@ h2
         size: 1.8rem
         weight: 800
 
+h3
+    font-size: 1.5rem
+
+header
+    .about
+        background: red
+
 footer
+    text-align: center
     padding: calc($space/2) $space

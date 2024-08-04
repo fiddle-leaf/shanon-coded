@@ -1,6 +1,6 @@
 import styles from "./Photo.module.sass";
 
-import PostDate from "../date/Date";
+import PostDate from "../date/PostDate";
 
 export default function Photo({ title, date, source, alt, caption = "" }) {
   return (

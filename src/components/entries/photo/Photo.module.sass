@@ -22,7 +22,7 @@
     
 
 .info
-    +grid($flow: column, $wrap: nowrap, $gap: 0)
+    +grid($flow: column, $wrap: nowrap, $gap: $space)
     flex: 20%
 
     div
@@ -38,10 +38,16 @@
     align-content: flex-end
 
     h2
+        
         padding-block: $space
+
+    p
+    
+        color: $secondary
+        
   
 
 .caption
-    padding: $space
+    text-align: center
 
 

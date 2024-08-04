@@ -1,19 +1,33 @@
 @use '../../styles/styles' as *
 
-.links
+nav
+    +grid($flow: column, $wrap: nowrap, $gap: calc($space/2))
+h3.title
+    font-size: 1.3rem
+    align-self: flex-start
+
+ul.links
     +grid($flow: row, $wrap: wrap, $gap: $space)
     align-content: space-around
     justify-content: center
+    list-style: none
     
     height: 1.5rem 
 
          
+    li
         
-    span
-        padding-inline: $space
-        background-color: hsl(333, 80%, 80%)
         flex: 0 1 auto
 
         a
-            padding: 0.5rem
+
             font-size: 1.02rem
+            color: $accent
+            padding: calc($space/6) $space
+            background-color: $secondary
+            border-bottom: 2px solid $accent
+            text-decoration: none
+
+        a:hover
+            color: $secondary
+            background: $accent
