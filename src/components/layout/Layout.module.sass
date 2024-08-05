@@ -35,16 +35,29 @@ img
     flex: 0
 
 .header
-    flex: 1
     +grid($flow: column, $wrap: nowrap, $gap: $space)
+    align-items: stretch
+
+    header
+        +grid($flow: column, $wrap: nowrap, $gap: 2rem )
+        align-items: flex-start
+        padding: calc($space * 4)
+
+        .title
+            flex: 1
+
+        div
+            flex: 0
+    
 
 .posts
     flex: 1
     padding: $space
 
 .title
+    align-self: flex-start
     +grid($flow: row, $wrap: nowrap, $gap: 0)
-    padding-block: calc($space * 2)
+    
     h1
         line-height: 150%
         font:

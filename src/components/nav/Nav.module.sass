@@ -3,14 +3,13 @@
 .nav
     @extend .border
     background-color: $main
-    padding-block-end: calc($space/6)
+
 
 ul.links
     +grid($flow: row, $wrap: wrap, $gap: 0)
     justify-content: space-evenly
     list-style: none
     
-    height: 1.5rem 
 
          
     li
@@ -27,6 +26,7 @@ ul.links
             text-decoration: none
             text-transform: lowercase
             padding: calc($space/4) $space
+            letter-spacing: calc($space * 0.05)
 
         a:hover
             background: $accent
