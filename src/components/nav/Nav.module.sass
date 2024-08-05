@@ -1,38 +1,32 @@
 @use '../../styles/styles' as *
 
-nav
-    +grid($flow: column, $wrap: nowrap, $gap: calc($space/2))
-h3.title
-    color: $secondary
-    font:
-        weight: 900
-        size: 0.9rem
-    align-self: flex-start
-    text-transform: uppercase
-    letter-spacing: calc($space/15)
+.nav
+    @extend .border
+    background-color: $main
+    padding-block-end: calc($space/6)
 
 ul.links
-    +grid($flow: row, $wrap: wrap, $gap: $space)
-    align-content: space-around
-    justify-content: flex-start
+    +grid($flow: row, $wrap: wrap, $gap: 0)
+    justify-content: space-evenly
     list-style: none
     
     height: 1.5rem 
 
          
     li
-        
-        flex: 0 1 auto
+        flex: 1
+        +grid($flow: column, $wrap: nowrap, $gap: 0)
+    
 
         a
-
-            font-size: 1.02rem
-            color: $accent
-            padding: calc($space/6) $space
-            background-color: $secondary
-            border-bottom: 2px solid $accent
+            flex: 1
+            font:
+                size: 1.1rem
+                weight: 800
+            color: $secondary
             text-decoration: none
+            text-transform: lowercase
+            padding: calc($space/4) $space
 
         a:hover
-            color: $secondary
             background: $accent

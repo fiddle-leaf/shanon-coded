@@ -6,9 +6,11 @@ import layout from "./Layout.module.sass";
 export default function Layout({ children }) {
   return (
     <article className={layout.app}>
+      <div className={layout.nav}>
+        <Nav />
+      </div>
       <div className={layout.header}>
         <Header title={layout.title} />
-        <Nav />
       </div>
       <div className={layout.posts}>
         <main className={layout.content}>{children}</main>

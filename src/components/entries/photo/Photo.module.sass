@@ -4,7 +4,7 @@
 .photo
 
     padding: $space
-    +grid($flow: row, $wrap: wrap, $gap: $space)
+    +grid($flow: row, $wrap: wrap, $gap: calc($space*2))
     
 
 
@@ -42,12 +42,18 @@
         padding-block: $space
 
     p
-    
+        @extend .uppercase
         color: $secondary
         
   
 
 .caption
     text-align: center
+    font:
+        size: 0.9rem
+        weight: 500
+        style: italic
+
+    
 
 

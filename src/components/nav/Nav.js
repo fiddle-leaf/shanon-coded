@@ -3,7 +3,6 @@ import styles from "./Nav.module.sass";
 export default function Nav(props) {
   return (
     <nav className={styles.nav}>
-      <h3 className={styles.title}>Getting around:</h3>
       <ul className={styles.links}>
         <li>
           <a href="/" alt="home-link">
